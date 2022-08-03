@@ -77,3 +77,5 @@ getQuotes();
 // }
 
 // newQuote()
+
+// Developed by SeyedMohammadMahdi Kiaei
