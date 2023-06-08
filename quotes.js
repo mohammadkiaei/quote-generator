@@ -6575,4 +6575,4 @@ const localQuotes = [
       ]
 ]
 
-// Developed by SeyedMohammadMahdi Kiaei
+// Developed by Mohammad Kiaei
