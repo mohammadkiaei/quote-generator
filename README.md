@@ -1,8 +1,10 @@
 # Quote Generator
-This is a quote generator project using API.<br/>
-In this project, we can see quotes and we can share quotes on our personal Twitter accounts using the share button on the project.<br/>
-This project using API and stored quotes in local array, so just in first time of loading you wait and see the loader.<br/>
-Also I put the quotes.js, this is the local quotes and you can use it to by reading and edit a bit of script.js file.<br/>
+💬 QUOTE GENERATOR
+ 
+✅ One of the most compelling and fun projects I undertook in frontend development involved the creation of a dynamic quote generator. This project seamlessly integrates with an API, allowing for the retrieval and display of thought-provoking quotes directly on the frontend interface. What sets this project apart is its ability to engage users by presenting them with a diverse range of inspiring and insightful sentences at the click of a button.<br/>
+
+✅ Furthermore, this quote generator offers an enhanced user experience by enabling seamless sharing functionality. Users have the convenience of directly sharing their favorite quotes to their personal Twitter accounts, fostering social interaction and spreading inspiration across the platform.<br/>
+
 Check the Link to [watch it online](https://mohammadkiaei.github.io/quote-generator/).
 <br/>
 <br/>
