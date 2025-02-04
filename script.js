@@ -7,8 +7,6 @@ const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
-// let apiQuotes= [];
-
 // Show Loading
 function loading() {
     loader.hidden = false;
@@ -24,12 +22,10 @@ function complete() {
 //Show New Quote
 function newQuote() {
     loading();
-    //Pick a random quote from apiQuotes array
-    // const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 
-    //if you get your quotes locally just need bellow code!
+    // if you get your quotes locally just need bellow code!
      const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
-//  Check if Author field is blank and replace it with 'Unknown'
+    //  Check if Author field is blank and replace it with 'Unknown'
     if (!quote.author) {
         authorText.textContent = 'Unknown';
     } else {
@@ -49,17 +45,12 @@ function newQuote() {
 
 
 // Get Quotes From API
-// async function getQuotes() {
-//     loading();
-//     const apiUrl = 'https://type.fit/api/quotes';
-//     try {
-//         const response = await fetch(apiUrl);
-//         apiQuotes = await response.json();
-//         newQuote()
-//     }   catch (error) {
-//         //Catch Error Here
-//     }
-// }
+async function getQuotes() {
+    loading();
+    
+    newQuote()
+
+}
 
 
 //Tweet Quote
