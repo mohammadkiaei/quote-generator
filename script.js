@@ -43,16 +43,6 @@ function newQuote() {
     complete();
 }
 
-
-// Get Quotes From API
-async function getQuotes() {
-    loading();
-    
-    newQuote()
-
-}
-
-
 //Tweet Quote
 function tweetQuote() {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
@@ -62,9 +52,6 @@ function tweetQuote() {
 // Event Listeners
 newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweetQuote);
-
-//On Load
-getQuotes(); 
 
 newQuote()
 
