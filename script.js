@@ -53,6 +53,4 @@ function tweetQuote() {
 newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweetQuote);
 
-newQuote()
-
 // Developed by Mohammad Kiaei
