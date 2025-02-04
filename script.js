@@ -43,17 +43,17 @@ function newQuote() {
     complete();
 }
 // Get Quotes From API
-async function getQuotes() {
-    loading();
-    const apiUrl = 'https://type.fit/api/quotes';
-    try {
-        const response = await fetch(apiUrl);
-        apiQuotes = await response.json();
-        newQuote()
-    }   catch (error) {
-        //Catch Error Here
-    }
-}
+// async function getQuotes() {
+//     loading();
+//     const apiUrl = 'https://type.fit/api/quotes';
+//     try {
+//         const response = await fetch(apiUrl);
+//         apiQuotes = await response.json();
+//         newQuote()
+//     }   catch (error) {
+//         //Catch Error Here
+//     }
+// }
 
 
 //Tweet Quote
@@ -71,11 +71,11 @@ getQuotes();
 
 //if you get your quotes locally just need bellow code!
 
-// function newQuote() {
-//     const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
-//     console.log(quote);
-// }
+function newQuote() {
+    const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
+    console.log(quote);
+}
 
-// newQuote()
+newQuote()
 
 // Developed by Mohammad Kiaei
