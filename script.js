@@ -1,3 +1,5 @@
+import localQuotes from './quotes.js';
+
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
@@ -5,8 +7,7 @@ const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
-
-let apiQuotes= [];
+// let apiQuotes= [];
 
 // Show Loading
 function loading() {
@@ -24,7 +25,10 @@ function complete() {
 function newQuote() {
     loading();
     //Pick a random quote from apiQuotes array
-    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+    // const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+
+    //if you get your quotes locally just need bellow code!
+     const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
 //  Check if Author field is blank and replace it with 'Unknown'
     if (!quote.author) {
         authorText.textContent = 'Unknown';
@@ -42,6 +46,8 @@ function newQuote() {
     quoteText.textContent = quote.text;
     complete();
 }
+
+
 // Get Quotes From API
 // async function getQuotes() {
 //     loading();
@@ -68,13 +74,6 @@ twitterBtn.addEventListener('click', tweetQuote);
 
 //On Load
 getQuotes(); 
-
-//if you get your quotes locally just need bellow code!
-
-function newQuote() {
-    const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
-    console.log(quote);
-}
 
 newQuote()
 
