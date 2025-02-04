@@ -1,4 +1,4 @@
-import localQuotes from './quotes.js';
+import { localQuotes } from './quotes.js';
 
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
