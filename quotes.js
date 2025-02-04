@@ -6575,4 +6575,6 @@ const localQuotes = [
       ]
 ]
 
+export default localQuotes;
+
 // Developed by Mohammad Kiaei
